@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #222;
+}
+
+.card {
+    width: 90%;
+    max-width: 500px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #e7e7e7;
+    margin: 50px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+
+.search,
+.search-country {
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+}
+.search-country:hover{
+    
+   
+}
+
+.select-wrapper {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.search-country input,
+.search-country select,
+.search button {
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    padding: 10px 15px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 100%;
+}
+
+.search-country select {
+    flex: 0.5; 
+}
+
+.search-country input,
+.search button {
+    flex: 0.4; 
+}
+
+.search button {
+    border-radius: 50px; 
+    width: 80px; 
+    height: 40px;
+    cursor: pointer;
+}
+.search button:hover {
+    box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.weather-icon {
+    width: 50%;
+    margin-top: 30px;
+}
+
+.weather h1 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
+.col img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.humidity,
+.wind {
+    font-size: 20px;
+    margin-top: -6px;
+}
+
+.error {
+    text-align: left;
+    margin-left: 10px;
+    font-size: 16px;
+    margin-top: 20px;
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        max-width: none;
+    }
+
+    .search {
+        justify-content: flex-start;
+    }
+}

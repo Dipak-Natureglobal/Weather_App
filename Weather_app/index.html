@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <div class="card">
+        <div class="search-country">
+           
+            <select id="countryInput" onchange="populateStates()" placeholder="Select your country">
+                <option value="">Select your country</option>
+                <option value="+93">Afghanistan </option>
+                <option value="+355">Albania </option>
+                <option value="+213">Algeria</option>
+                <option value="+376">Andorra </option>
+                <option value="+244">Angola </option>
+                <option value="+54">Argentina </option>
+                <option value="+374">Armenia </option>
+                <option value="+61">Australia </option>
+                <option value="+43">Austria </option>
+                <option value="+994">Azerbaijan </option>
+                <option value="+880">Bangladesh</option>
+                <option value="+375">Belarus </option>
+                <option value="+32">Belgium </option>
+                <option value="+55">Brazil </option>
+                <option value="+359">Bulgaria </option>
+                <option value="+1">Canada</option>
+                <option value="+86">China </option>
+                <option value="+57">Colombia</option>
+                <option value="+20">Egypt </option>
+                <option value="+33">France </option>
+                <option value="+49">Germany </option>
+                <option value="+91">India </option>
+                <option value="+62">Indonesia </option>
+                <option value="+39">Italy</option>
+                <option value="+81">Japan </option>
+                <option value="+52">Mexico </option>
+                <option value="+7">Russia </option>
+                <option value="+27">South Africa </option>
+              
+            </select>
+            <br />
+        <br />
+            <div id="stateDropdownContainer" style="display: none;">
+                <label for="stateInput"><br /></label>
+                <select id="stateInput"></select>
+            </div>
+        </div>
+        <div class="search">
+            <!-- <i class="bi bi-search"></i> -->
+            <!-- <input type="text" placeholder="Enter city name" spellcheck="false"> -->
+            <button onclick="searchWeather()">Search</button>
+        </div>
+        <!-- <div class="error">
+            <p>Invalid City Name...<i class="bi bi-emoji-frown"></i></p>
+        </div> -->
+        <div class="weather">
+            <img src="images/rain.png" class="weather-icon">
+            <h1 class="temp">22°C</h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">50%</p>
+                        <p>Humidtiy</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">15 km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="working.js"></script>
+</html>
